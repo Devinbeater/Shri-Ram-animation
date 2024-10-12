@@ -1,18 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400">
+  <defs>
+    <style>
+      .skin { fill: #e0ac68; }
+      .clothes { fill: #007bff; }
+      .bow { fill: #8b4513; }
+      .eye { fill: #000; }
+      .hair { fill: #3b2b20; }
+    </style>
+  </defs>
   <!-- Head -->
-  <circle cx="100" cy="80" r="30" fill="#f4c542" />
-  
+  <circle cx="100" cy="80" r="30" class="skin" />
+  <ellipse cx="100" cy="100" rx="35" ry="10" class="hair" />
+  <circle cx="90" cy="75" r="5" class="eye" />
+  <circle cx="110" cy="75" r="5" class="eye" />
+
   <!-- Body -->
-  <rect x="75" y="110" width="50" height="100" fill="#ff8000" />
+  <rect x="75" y="110" width="50" height="100" class="clothes" />
 
   <!-- Legs -->
-  <rect x="75" y="210" width="20" height="80" fill="#ff8000" />
-  <rect x="105" y="210" width="20" height="80" fill="#ff8000" />
-  
+  <rect x="75" y="210" width="20" height="80" class="clothes" />
+  <rect x="105" y="210" width="20" height="80" class="clothes" />
+
   <!-- Arms -->
-  <rect x="50" y="120" width="20" height="60" fill="#f4c542" />
-  <rect x="130" y="120" width="20" height="60" fill="#f4c542" />
-  
+  <rect x="50" y="120" width="20" height="60" class="skin" />
+  <rect x="130" y="120" width="20" height="60" class="skin" />
+
   <!-- Bow -->
-  <path d="M150,110 Q170,150 150,190" stroke="brown" stroke-width="5" fill="none" />
+  <path d="M150,110 Q170,150 150,190" class="bow" stroke-width="5" fill="none" />
 </svg>
